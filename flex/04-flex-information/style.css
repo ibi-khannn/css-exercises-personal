@@ -1,0 +1,58 @@
+/* Containerized everything to center it with a div "centered" using flex-direction column, then I containerized all the items with a div "items" because I wanted
+to put everything in a row and centerize everything in the row along the primary and cross axis. Then I containerize all the items separately to display the text
+under them using flex-direction column once again and center everything. The key thing for centering the text and images equally was by giving the each individual
+item div a specific width of 200px using flex-basis. This way everything is centered equally using flex */
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 54px;
+}
+
+.item-1, .item-2, .item-3, .item-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 200px;
+}
+
+.text {
+  text-align: center;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 900;
+  margin: 32px;
+}
+
+/* do not edit this footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eee;
+}

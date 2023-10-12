@@ -1,0 +1,94 @@
+/* Changed body to flex: display and flex-direction column and added a big-container and set flex-grow to 1 and flex-direction to column to stick footer div at 
+the bottom. Set sidebar flex-shrink to 0 to keep the space. Set container flex-grow to 1 to take down the blue sidebar at the bottom and join it with the footer. */
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.header {
+  height: 45px;
+  background: darkmagenta;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 35px;
+  font-weight: bold;
+  padding: 8px;
+}
+
+.footer {
+  height: 72px;
+  background: #eee;
+  color: darkmagenta;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  background: royalblue;
+  box-sizing: border-box;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  list-style: none;
+  margin: 16px;
+  padding: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.card {
+  border: 1px solid #eee;
+  box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+  border-radius: 4px;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+}
+
+.cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 16px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 16px;
+  flex-basis: 400px;
+  height: 350px;
+  flex-grow: 1;
+  padding: 12px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.big-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}

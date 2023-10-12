@@ -1,0 +1,38 @@
+body {
+  background: #eee;
+  font-family: sans-serif;
+}
+
+.card {
+  width: 400px;
+  background: #fff;
+  margin: 50px auto;
+  padding: 8px;
+}
+
+.title {
+  background: #e3f4ff;
+  margin-top: 0; /* Eliminates the default space between .card and .title and makes it use the spacing of the padding that has been set in .card */
+  padding: 16px 12px; /* 16px top-bottom and 12px left-right */
+  margin-bottom: 8px;
+}
+
+.content {
+  background: #e3f4ff;
+  margin-bottom: 8px;
+  padding: 16px 12px;
+}
+
+.button-container {
+  background: #e3f4ff;
+  text-align: center;
+  padding: 16px;
+}
+
+button {
+  background: white;
+  border: 1px solid #eee;
+  display: block;
+  padding: 8px 16px;
+  margin: 0 auto;
+}
